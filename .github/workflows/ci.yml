@@ -1,0 +1,20 @@
+name: Repository checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  repository:
+    name: Repository checks
+    runs-on: macos-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Validate source-only repository
+        run: ./scripts/check-repository.sh

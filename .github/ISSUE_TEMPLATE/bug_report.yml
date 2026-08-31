@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a reproducible BongoCat problem
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe what happened and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: List the shortest sequence that reproduces the problem.
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+    validations:
+      required: true
+  - type: input
+    id: architecture
+    attributes:
+      label: Mac architecture
+      placeholder: Apple Silicon or Intel
+    validations:
+      required: true
+  - type: input
+    id: cubism
+    attributes:
+      label: Cubism SDK version
+    validations:
+      required: true
