@@ -1,0 +1,52 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Swift Package Manager and Xcode
+.build/
+.swiftpm/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+
+# Local builds and release artifacts
+build/
+dist/
+*.app/
+*.dmg
+*.pkg
+*.zip
+SHA256SUMS
+*.metallib
+
+# Live2D SDK and generated native libraries
+CubismSdkForNative*/
+Live2DCubismCore*/
+*.a
+*.dylib
+*.framework/
+*.xcframework/
+
+# Local editor and agent state
+.idea/
+.vscode/
+.claude/
+.codex/
+CLAUDE.md
+
+# Environment and signing material
+.env
+.env.*
+!.env.example
+*.cer
+*.crt
+*.p8
+*.p12
+*.key
+*.keychain
+*.keychain-db
+*.mobileprovision
+*.provisionprofile
+notarytool-*.json
