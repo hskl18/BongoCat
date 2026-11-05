@@ -22,6 +22,7 @@ These numbers are a local snapshot, not a guarantee for every Mac.
 
 - macOS 26 or newer.
 - Xcode 26 or newer with Command Line Tools selected.
+- Xcode's Metal Toolchain: `xcodebuild -downloadComponent MetalToolchain`.
 - [CMake](https://cmake.org/download/).
 - [Live2D Cubism SDK for Native 5 R5](https://www.live2d.com/en/sdk/download/native/).
 
